@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!--Banner y boton-->
+    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Metricas de Halstead"
+                    android:textColor="#FFF"
+                    android:background="@color/azul"
+                    android:textSize="20sp"/>
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <Button
+
+                        android:textSize="12sp"
+                        android:id="@+id/load_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seleccionar Archivo"
+
+                        />
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_prueba"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+
+
+                    <Button
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/save_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Guardar"
+                        />
+
+                    <Button
+                        android:id="@+id/ver_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ver"
+                        />
+
+                    <Button
+                        android:id="@+id/borrar_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Borrar"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+    <!--Texto de archivo-->
+    <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/load_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="10dp"
+                            android:text="ejemplo bla bla"/>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+    <!--Resultados de metricas-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="320dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:textColor="@color/blanco"
+                    android:background="@color/azul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Resultados"
+                    android:textSize="22sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Metricas Basicas"
+                        android:background="@color/azul"
+                        android:textColor="@color/blanco"/>
+
+                    <TextView
+                        android:id="@+id/txt_n1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="n1:"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_n2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="n2:"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_N1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="N1:"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_N2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="N2:"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Metricas Derivadas"
+                        android:background="@color/azul"
+                        android:textColor="@color/blanco"/>
+
+                    <TextView
+                        android:id="@+id/txt_longitud"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Longitud del Programa:"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_vocabulario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vocabulario:"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_volumen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Volumen:"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_dificultad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dificultad del programa:"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_nivel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nivel del programa:"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_esfuerzo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Esfuerzo de implementacion:"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_tiempo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tiempo de implementacion:"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_numerobugs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Numero de bugs liberados:"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
